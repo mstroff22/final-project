@@ -1,8 +1,8 @@
 require 'bundler' #require bundler
 Bundler.require #require everything in bundler in gemfile
 require 'pry'
-require './lib/finalproject.rb'
-require './lib/scraping.rb'
+require_relative './lib/finalproject.rb'
+require_relative './lib/scraping.rb'
 
 get '/' do
   @stock = Stock.new("mu")
