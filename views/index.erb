@@ -10,31 +10,48 @@
 <h1> <center> Mikey's stocks </center></h1>
 <br>
 <h3><center><%=@stock.name%></center></h3>
-<p><center>Current Stock Price: <%= @stock.current_price %></center><p>
+<div class = text>
+  <p><center>Current Stock Price: <%= @stock.current_price %></center><p>
   <% if @stock.change_up == ""%>
-    <p><center> Stock Change: <%= @stock.change_down %></center><p>
+    <div id = "down">
+      <p><center> Stock Change: <%= @stock.change_down %></center><p>
+    </div>
   <% else %>
-    <p><center> Stock Change: <%= @stock.change_up %></center><p>
+    <div id = "up">
+      <p><center> Stock Change: <%= @stock.change_up %></center><p>
+    </div>
   <% end %>
 
 <br>
 <br>
 <h3><center><%=@stock2.name%></center></h3>
-<p><center>Current Stock Price: <%= @stock2.current_price %></center><p>
-<% if @stock2.change_up == ""%>
-    <p><center> Stock Change: <%= @stock2.change_down %></center><p>
+<div class = text>
+  <p><center>Current Stock Price: <%= @stock2.current_price %></center><p>
+  <% if @stock2.change_up == ""%>
+    <div id = "down">
+      <p><center> Stock Change: <%= @stock2.change_down %></center><p>
+    </div>
   <% else %>
-    <p><center> Stock Change: <%= @stock2.change_up %></center><p>
+    <div id = "up">
+      <p><center> Stock Change: <%= @stock2.change_up %></center><p>
+    </div>
   <% end %>
+</div>
 <br>
 <br>
 <h3><center><%=@stock3.name%></center></h3>
-<p><center>Current Stock Price: <%= @stock3.current_price %></center><p>
-<% if @stock.change_up == ""%>
-    <p><center> Stock Change: <%= @stock3.change_down %></center><p>
+<div class = text>
+  <p><center>Current Stock Price: <%= @stock3.current_price %></center><p>
+  <% if @stock.change_up == ""%>
+    <div id = "down">
+      <p><center> Stock Change: <%= @stock3.change_down %></center><p>
+    </div>
   <% else %>
-    <p><center> Stock Change: <%= @stock3.change_up %></center><p>
-  <% end %>
+    <div id = "up">
+      <p><center> Stock Change: <%= @stock3.change_up %></center><p>
+    </div>
+      <% end %>
+</div>
 
 
 </body>

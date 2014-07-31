@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Anton|oswald)
+
+
 h1{
   color: #000066;
 }
@@ -5,4 +8,20 @@ h1{
 h3{
   color: #000066;
 }
+.text{
+  font-family: 'oswald', sans-serif;
+}
+
+body{background-image: url('http://www.todaybeam.com/wp-content/uploads/2014/07/Stock-Market1.jpg');
+background-size: 1200px 1000px;
+}
+
+#up{
+  color: green;
+}
+
+#down{
+  color: red;
+}
+
 
