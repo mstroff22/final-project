@@ -1,4 +1,5 @@
 require_relative 'scraping.rb'
+require 'twilio-ruby'
 
 
 class Text
