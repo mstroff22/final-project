@@ -1,5 +1,5 @@
-require_relative 'scraping.rb'
-require_relative 'finalproject.rb'
+require_relative 'lib/scraping.rb'
+require_relative 'lib/finalproject.rb'
 
 task :stocksupdate do 
 newtext=Text.new("mu")
