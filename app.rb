@@ -11,3 +11,9 @@ get '/' do
   erb :index
 end
 
+post '/'  do
+  @ticker = params[:ticker]
+  puts @ticker
+end
+
+

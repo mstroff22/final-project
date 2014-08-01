@@ -19,7 +19,7 @@ class Text
     @client.account.messages.create(
       :from => '+14342605034',
       :to => '+13109889494',
-      :body => "Good afternoon Mikey, #{my_stock.name}'s current stock price is #{my_stock.current_price}. Today, the difference in stock price is."
+      :body => "Good afternoon Mikey, #{my_stock.name}'s current stock price is #{my_stock.current_price}. Today, the difference in stock price is #{my_stock.change_up} #{my_stock.change_down} ."
     )
 
 
